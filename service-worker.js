@@ -12,15 +12,15 @@ var cacheFiles = [
   "images/icon-192.png",
   "images/icon-512.png",
 ];
-self.addEventListener("install", function (e) {
-  console.log("[Service Worker] Install");
-  e.waitUntil(
-    caches.open(cacheName).then(function (cache) {
-      console.log("[Service Worker] Caching all the files");
-      return cache.addAll(cacheFiles);
-    })
-  );
-});
+// self.addEventListener("install", function (e) {
+//   console.log("[Service Worker] Install");
+//   e.waitUntil(
+//     caches.open(cacheName).then(function (cache) {
+//       console.log("[Service Worker] Caching all the files");
+//       return cache.addAll(cacheFiles);
+//     })
+//   );
+// });
 
 // self.addEventListener("fetch", function (e) {
 //   e.respondWith(
