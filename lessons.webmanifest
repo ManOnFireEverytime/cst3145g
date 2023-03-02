@@ -1,7 +1,7 @@
 {
   "name": "Lessons Store",
   "short_name": "LSP",
-  "description": "Online after school classes management.",
+  "description": "Webstore Lessons.",
   "icons": [
     {
       "src": "images/icon-192.png",
