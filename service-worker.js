@@ -33,15 +33,15 @@ self.addEventListener("fetch", function (e) {
         );
 
         return cachedFile;
-      } else {
-        return fetch(e.request).then(function (response) {
-          return caches.open(cacheName).then(function (cache) {
-            //add the new file to the cache
-            cache.put(e.request, response.clone());
-            console.log(
-              "[Service Worker] Resource fetched and saved in the cache for:" +
-                e.request.url
-            );
+      // } else {
+      //   return fetch(e.request).then(function (response) {
+      //     return caches.open(cacheName).then(function (cache) {
+      //       //add the new file to the cache
+      //       cache.put(e.request, response.clone());
+      //       console.log(
+      //         "[Service Worker] Resource fetched and saved in the cache for:" +
+      //           e.request.url
+      //       );
 
             return response;
           });
